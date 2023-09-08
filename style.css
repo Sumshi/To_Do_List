@@ -1,0 +1,31 @@
+.container{/*this is the whole list*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid blueviolet;/*green*/
+    border-bottom: 5px solid blueviolet;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.todo_items{
+    background: transparent;
+    border: none;
+    outline: none ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+/*pseudoclass parent and child selectors*/
+.todo:has(.todo_checkbox:checked){
+    /*if it has a checkbox selected then*/
+    color: rgb(210, 5, 8);
+    background: hwb(0 80% 18%);
+    text-decoration: line-through;
+    order: 1;/*order in which they display checked
+    element goes to the back of the list*/
+}
