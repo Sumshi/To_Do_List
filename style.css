@@ -1,10 +1,15 @@
+body{
+    background: rgb(243, 208, 162);
+}
 .container{/*this is the whole list*/
     display: flex;
     flex-direction: column;
     width: 300px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-    border-top: 5px solid blueviolet;/*green*/
-    border-bottom: 5px solid blueviolet;
+    /*border-top: 5px solid blueviolet;
+    border-bottom: 5px solid blueviolet;*/
+    border: 5px solid blueviolet;
+    position: absolute;
 }
 .todo{
     display: flex;
