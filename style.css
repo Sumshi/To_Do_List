@@ -9,7 +9,9 @@ body{
     /*border-top: 5px solid blueviolet;
     border-bottom: 5px solid blueviolet;*/
     border: 5px solid blueviolet;
-    position: absolute;
+    /*margin-left: 100px;*/
+    margin: 0 auto;
+
 }
 .todo{
     display: flex;
@@ -33,4 +35,10 @@ body{
     text-decoration: line-through;
     order: 1;/*order in which they display checked
     element goes to the back of the list*/
+}
+
+@media only screen and (max-width: 768px){
+    /*.container{
+        margin: 0 auto;
+    }*/
 }
